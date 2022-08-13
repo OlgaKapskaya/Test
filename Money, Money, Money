@@ -1,0 +1,12 @@
+function calculateYears(p, i, t, d) {
+  let rez=p;
+  let year=0;
+    if (d==p){return 0;}
+  else{
+    while (rez<=d){
+      rez+=rez*i-(rez*i*t);
+      year++;
+    }
+  }
+  return year;
+}

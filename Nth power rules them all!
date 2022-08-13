@@ -1,0 +1,9 @@
+function modifiedSum(a, n) {
+  let rez1=0;
+  let rez2=0;
+  for (let i=0; i<a.length; i++){
+    rez1 += a[i]**n;
+    rez2 += a[i];
+  }
+  return rez1-rez2;
+}

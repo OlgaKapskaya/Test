@@ -1,0 +1,13 @@
+function alphabetPosition(text) {
+  let alf="abcdefghijklmnopqrstuvwxyz";
+  let alf2="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  let rez=[];
+  for (let i=0; i<text.length; i++){
+    for (let j=0; j<alf.length; j++){
+      if (text[i]==alf[j] || text[i]==alf2[j]){
+        rez.push(j+1);
+      }
+    }
+  }
+  return rez.join(" ");
+}

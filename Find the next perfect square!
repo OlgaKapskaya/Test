@@ -1,0 +1,7 @@
+function findNextSquare(sq) {
+  let num;
+  if (Number.isInteger(Math.sqrt(sq))) {
+      num = Math.sqrt(sq)+1;
+      return Math.pow(num, 2);
+      } else {return -1;}
+}

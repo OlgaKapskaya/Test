@@ -1,0 +1,17 @@
+function sumTwoSmallestNumbers(numbers) {  
+  let min1 = numbers[0];
+  let min2 = numbers[1];
+  
+  for (let i=0; i<numbers.length; i++){
+    if (min1>numbers[i]){
+      min1 = numbers[i];
+    }
+
+  }
+  for (let j=0; j<numbers.length; j++){
+    if (min2>numbers[j] && min1!=numbers[j]){
+     min2 = numbers[j] 
+    }
+  }
+  return min1+min2;
+}

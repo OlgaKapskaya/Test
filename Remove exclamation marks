@@ -1,0 +1,9 @@
+function removeExclamationMarks(s) {
+  let rez=[];
+  for (let i=0; i<s.length; i++){
+    if (s[i] != "!"){
+      rez.push(s[i]);
+    }
+  }
+  return rez.join("");
+}

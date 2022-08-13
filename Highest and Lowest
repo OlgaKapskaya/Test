@@ -1,0 +1,19 @@
+function highAndLow(numbers){
+  let num = numbers.split(" ");
+  let num1 = [];
+  for (let i=0; i<num.length; i++){
+    if (num[i] != " "){
+   num1.push(num[i]); }
+  }
+  let max = Number(num1[0]);
+  let min = Number(num1[0]);
+  for (let j=0; j<num1.length; j++){
+    if (Number(num1[j])>max){
+      max = Number(num1[j]);
+    }
+    if (Number(num1[j])<min){
+      min=Number(num1[j]);
+    }
+  }
+  return max+' '+min;
+}

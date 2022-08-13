@@ -1,0 +1,9 @@
+var number = function(busStops){
+  let numEnter = 0;
+  let numExit = 0;
+  for (let i=0; i<busStops.length; i++){
+    numEnter+=busStops[i][0];
+    numExit+=busStops[i][1];
+  }
+  return numEnter-numExit;
+}

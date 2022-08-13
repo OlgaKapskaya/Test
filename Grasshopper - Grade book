@@ -1,0 +1,8 @@
+function getGrade (s1, s2, s3) {
+  let rez = (s1+s2+s3)/3;
+  if (rez>=90 && rez<=100){return "A";}
+  if (rez<90 && rez>=80){return "B";}
+  if (rez<80 && rez>=70){return "C";}
+  if (rez<70 && rez>=60){return "D";}
+  if (rez<60 && rez>=0){return "F";}
+}

@@ -1,0 +1,11 @@
+function lostSheep(friday,saturday,total){
+  let sheepFriday=0;
+  let sheepSaturday=0;
+  for (let i=0;i<friday.length;i++){
+    sheepFriday+=friday[i];
+  }
+  for(let j=0;j<saturday.length;j++){
+    sheepSaturday+=saturday[j];
+  }
+  return total-sheepFriday-sheepSaturday;
+}

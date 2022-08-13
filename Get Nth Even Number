@@ -1,0 +1,9 @@
+function nthEven(n){
+  let i=0;
+  let rez =[];
+  while (rez.length<n){
+    if (i%2==0){rez.push(i)}
+    i++;
+  }
+  return rez[rez.length-1];
+}

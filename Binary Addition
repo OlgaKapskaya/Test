@@ -1,0 +1,4 @@
+function addBinary(a,b) {
+  let rez = a+b;
+  return rez.toString(2);
+}

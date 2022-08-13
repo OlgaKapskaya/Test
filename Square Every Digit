@@ -1,0 +1,8 @@
+function squareDigits(num){
+  let str = String(num);
+  let arr = [];
+  for (let i=0; i<str.length; i++){
+    arr.push(Number(str[i])**2);
+  }
+  return Number(arr.join(""))
+}

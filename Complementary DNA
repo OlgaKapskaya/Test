@@ -1,0 +1,18 @@
+function DNAStrand(dna){
+  let rez = dna.split();
+  for (let i=0; i<dna.length; i++){
+    if (dna[i]=="A"){
+      rez[i]="T";
+    }
+    if (dna[i]=="T"){
+      rez[i]="A";
+    }
+    if (dna[i]=="C"){
+      rez[i]="G";
+    }
+    if (dna[i]=="G"){
+      rez[i]="C"
+    }
+  }
+  return rez.join("");
+}

@@ -1,0 +1,4 @@
+function findNextPower(val, pow_) {
+  let rez = Math.ceil(Math.pow(val, 1/pow_)); 
+  return Math.pow(rez, pow_);
+}
