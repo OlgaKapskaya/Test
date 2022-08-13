@@ -1,0 +1,10 @@
+function disemvowel(str) {
+  let str2 = str.split("");
+  let arr=[];
+  for (let i=0; i<str2.length; i++){
+   if (str2[i]!="A" && str[i] != "a" && str[i]!="o" && str[i]!="i" && str[i] != "e" && str[i]!="O" && str[i]!="I" && str[i]!="U" && str[i]!="u" && str[i]!="E") {
+     arr.push(str[i])
+   }
+  }
+  return arr.join("");
+}
