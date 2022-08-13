@@ -1,0 +1,10 @@
+function correct(string)
+{
+  let str = string.split("");
+	for (let i=0; i<str.length; i++){
+    if (str[i]=="5") {str[i]="S"}
+    else if (str[i]=="0") {str[i]="O";}
+    else if (str[i]=="1") {str[i]="I";}
+  }
+  return str.join("");
+}
