@@ -1,0 +1,14 @@
+// return masked string
+function maskify(cc) {
+let cc1 = cc;
+let num = cc.length-4;
+let cc3="";
+if (cc.length>4){
+    cc1 = cc[cc.length-4]+cc[cc.length-3]+cc[cc.length-2]+cc[cc.length-1];
+    for (let i=0; i<cc.length-4; i++){
+      cc3+="#";
+    }
+  return cc3+cc1;
+} else return cc;
+}
+
